@@ -39,7 +39,7 @@ import deimos.cairo.cairo;
 import deimos.cairo.features;
 
 static if(CairoHasPdfSurface) {
-    extern(C) {
+    extern(System) {
         /**
          * CairoPdfVersion:
          * @CAIRO_PDF_VERSION_1_4: The version 1.4 of the PDF specification.
