@@ -41,13 +41,13 @@ import deimos.cairo.features;
 static assert(CairoHasXlibSurface) {
     import deimos.X11.Xlib;
     extern(System) {
-        cairo_surface_t * cairo_xlib_surface_create (Display     *dpy, Drawable	drawable, Visual      *visual, int		width, int		height);
+        cairo_surface_t * cairo_xlib_surface_create (Display *dpy, Drawable drawable, Visual *visual, int width, int height);
 
-        cairo_surface_t * cairo_xlib_surface_create_for_bitmap (Display  *dpy, Pixmap	bitmap, Screen	*screen, int	width, int	height);
+        cairo_surface_t * cairo_xlib_surface_create_for_bitmap (Display *dpy, Pixmap bitmap, Screen *screen, int width, int height);
 
-        void cairo_xlib_surface_set_size (cairo_surface_t *surface, int              width, int              height);
+        void cairo_xlib_surface_set_size (cairo_surface_t *surface, int width, int height);
 
-        void cairo_xlib_surface_set_drawable (cairo_surface_t *surface, Drawable	  drawable, int              width, int              height);
+        void cairo_xlib_surface_set_drawable (cairo_surface_t *surface, Drawable drawable, int width, int height);
 
         Display * cairo_xlib_surface_get_display (cairo_surface_t *surface);
 
