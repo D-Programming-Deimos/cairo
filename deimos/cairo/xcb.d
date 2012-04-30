@@ -40,9 +40,8 @@ module deimos.cairo.xcb;
 import deimos.cairo.cairo;
 import deimos.cairo.features;
 
-static assert(0, "To be implemented, requires deimos.xcb");
 static if (CairoHasXCBSurface) {
-
+    static assert(0, "XCB support to be implemented, requires deimos.xcb");
     extern(System) {
         cairo_surface_t * cairo_xcb_surface_create (xcb_connection_t *connection, xcb_drawable_t drawable, xcb_visualtype_t *visual, int width, int height);
 

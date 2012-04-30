@@ -37,6 +37,8 @@ module deimos.cairo.gobject;
 
 import deimos.cairo.cairo;
 
-version (CairoHasGobjectFunctions) {
-    //TODO
+static if(CairoHasGObjectFunctions) {
+    static assert(0, "GObject not supported");
+} else {
+    static assert(0, "Error: Cairo was not compiled with support for GObject");
 }

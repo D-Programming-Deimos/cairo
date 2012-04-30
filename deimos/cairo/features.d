@@ -2,7 +2,7 @@ module deimos.cairo.features;
 
 enum CairoHasFcFont = true;
 enum CairoHasFtFont = true;
-enum CairoHasGobjectFunctions = true;
+enum CairoHasGObjectFunctions = true;
 enum CairoHasImageSurface = true;
 enum CairoHasMimeSurface = true;
 enum CairoHasObserverSurface = true;
