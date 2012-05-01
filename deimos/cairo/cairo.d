@@ -1883,7 +1883,7 @@ extern(System) {
 
     CairoContent cairo_surface_get_content (cairo_surface_t *surface);
 
-    static if(CairoHasPngFunctions) {
+    static if(CairoHasPNGFunctions) {
         CairoStatus cairo_surface_write_to_png (cairo_surface_t *surface, const char *filename);
 
         CairoStatus cairo_surface_write_to_png_stream (cairo_surface_t *surface, cairo_write_func_t write_func, void *closure);

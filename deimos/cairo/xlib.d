@@ -38,8 +38,9 @@ module deimos.cairo.xlib;
 import deimos.cairo.cairo;
 import deimos.cairo.features;
 
-static assert(CairoHasXlibSurface) {
+static if(CairoHasXlibSurface) {
     import deimos.X11.Xlib;
+    import deimos.X11.X;
     extern(System) {
         cairo_surface_t * cairo_xlib_surface_create (Display *dpy, Drawable drawable, Visual *visual, int width, int height);
 
