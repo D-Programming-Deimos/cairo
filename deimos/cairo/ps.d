@@ -58,9 +58,9 @@ static if(CairoHasPSSurface) {
         cairo_surface_t * cairo_ps_surface_create_for_stream (cairo_write_func_t write_func, void *closure, double width_in_points, double height_in_points);
 
         void cairo_ps_surface_restrict_to_level (cairo_surface_t *surface, CairoPSLevel level);
-        void cairo_ps_get_levels (CairoPSLevel const **levels, int *num_levels);
+        void cairo_ps_get_levels (const(CairoPSLevel) **levels, int *num_levels);
 
-        const char * cairo_ps_level_to_string (CairoPSLevel level);
+        const(char) * cairo_ps_level_to_string (CairoPSLevel level);
 
         void cairo_ps_surface_set_eps (cairo_surface_t *surface, cairo_bool_t eps);
         cairo_bool_t cairo_ps_surface_get_eps (cairo_surface_t *surface);
