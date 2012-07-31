@@ -46,7 +46,7 @@ static if(CairoHasTEESurface) {
 
         void cairo_tee_surface_remove (cairo_surface_t *surface, cairo_surface_t *target);
 
-        cairo_surface_t * cairo_tee_surface_index (cairo_surface_t *surface, unsigned int index);
+        cairo_surface_t * cairo_tee_surface_index (cairo_surface_t *surface, uint index);
     }
 } else {
     static assert(0, "Error: Cairo was not compiled with support for the TEE backend");

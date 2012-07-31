@@ -54,9 +54,9 @@ static if(CairoHasSVGSurface) {
 
         void cairo_svg_surface_restrict_to_version (cairo_surface_t *surface, CairoSVGVersion version_);
 
-        void cairo_svg_get_versions (CairoSVGVersion const **versions, int *num_versions);
+        void cairo_svg_get_versions ( const(CairoSVGVersion) ** versions, int *num_versions);
 
-        const char * cairo_svg_version_to_string (CairoSVGVersion version_);
+        const(char) * cairo_svg_version_to_string (CairoSVGVersion version_);
     }
 } else {
     static assert(0, "Cairo was not compiled with support for the svg backend");
