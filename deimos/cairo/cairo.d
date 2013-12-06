@@ -1946,7 +1946,7 @@ extern(System) {
 
     int cairo_image_surface_get_stride (cairo_surface_t *surface);
 
-    version (CairoHasPngFunctions) {
+    version (CairoHasPNGFunctions) {
         cairo_surface_t * cairo_image_surface_create_from_png (const char *filename);
 
         cairo_surface_t * cairo_image_surface_create_from_png_stream (cairo_read_func_t read_func, void *closure);
