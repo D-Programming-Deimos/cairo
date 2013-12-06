@@ -38,7 +38,6 @@ module deimos.cairo.cairo;
 
 public import deimos.cairo.version_;
 public import deimos.cairo.features;
-public import deimos.cairo.deprecated_;
 
 extern(System) {
     int cairo_version();
