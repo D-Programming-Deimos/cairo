@@ -38,7 +38,7 @@ module deimos.cairo.pdf;
 import deimos.cairo.cairo;
 import deimos.cairo.features;
 
-static if(CairoHasPdfSurface) {
+static if(CairoHasPDFSurface) {
     extern(System) {
         /**
          * CairoPdfVersion:
