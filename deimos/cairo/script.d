@@ -34,7 +34,7 @@ module deimos.cairo.script;
  *	Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-import deimos.cairo;
+import deimos.cairo.cairo;
 import deimos.cairo.features;
 
 static if (CairoHasScriptSurface) {
