@@ -1613,13 +1613,15 @@ extern(System) {
      * elements for each element type.
      **/
     union cairo_path_data_t {
-        struct header {
+        struct Header {
             CairoPathDataType type;
             int length;
         };
-        struct point {
+        struct Point {
             double x, y;
         };
+        Point point;
+        Header header;
     }
 
 
