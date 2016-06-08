@@ -35,7 +35,7 @@ module deimos.cairo.ps;
  *	Carl D. Worth <cworth@cworth.org>
  */
 
-import deimos.cairo;
+import deimos.cairo.cairo;
 import deimos.cairo.features;
 
 static if(CairoHasPSSurface) {
